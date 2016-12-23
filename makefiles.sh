@@ -5,6 +5,7 @@ do
   # Make filepath out of ENV variable name 
   FILENAME=${i#FILE_} 
   FILENAME=${FILENAME//_/\/}
+  echo "Saving $FILENAME"
   # Save contents to file
   echo -e $(printenv "$i") > "${FILENAME}" 
 done
