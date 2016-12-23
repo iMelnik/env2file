@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM karlherler/pause
 
 MAINTAINER Sergey Melnik <sergey.melnik@commercetools.de>
 

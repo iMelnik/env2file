@@ -9,4 +9,4 @@ do
   echo -e $(printenv "$i") > "${FILENAME}" 
 done
 # Keep container running
-sleep infinity
+pause
