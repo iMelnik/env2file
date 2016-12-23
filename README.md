@@ -11,8 +11,11 @@ This image would be most useful for DockerCloud-like setups, when you do not hav
 ## How
 
 ```
+
 $ docker run -v /output -e FILE_output_myfile="First line\nSecond Line" --name=data-container imelnik/env2file
+
 $ docker run --volumes-from=data-container alpine cat /output/myfile
 First line
 Second Line
+
 ```
